@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
   let D2=new Dog('Akita',9,10000);
   let D3=new Dog('American Leopard Hound',12,13000);
 
-  res.render('event', { title: 'Search Results Dog',Dog : [D1,D2,D3] });
+  res.render('Dog', { title: 'Search Results Dog',Dog : [D1,D2,D3] });
 });
 
 
