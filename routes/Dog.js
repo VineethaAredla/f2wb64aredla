@@ -11,9 +11,9 @@ constructor(dog_Name, age, price){
 }
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  let D1=new Dog('Oscar',1000,'Awards');
-  let D2=new Dog('MTV',2000,'Rampwalk');
-  let D3=new Dog('HBO',3000,'MovieLaunch');
+  let D1=new Dog('Alaskan Malamute',5,12000);
+  let D2=new Dog('Akita',9,10000);
+  let D3=new Dog('American Leopard Hound',12,13000);
 
   res.render('event', { title: 'Search Results Dog',Dog : [D1,D2,D3] });
 });
