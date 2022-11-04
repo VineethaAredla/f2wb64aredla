@@ -13,10 +13,10 @@ block content
     p cols out of range
   else
     table#outer
-    for(let i=0; i<rows; i++){
-      tr#middle
-      <br>
-        for(let j=0; j<col; j++){
+      for (let i=0; i<rows; i++){
+        tr#middle
+        <br>
+        for (let j=0; j<col; j++){
           td= (1 + i + (j * rows)) +"  "
          }
      }
