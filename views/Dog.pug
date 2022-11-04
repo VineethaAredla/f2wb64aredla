@@ -3,9 +3,9 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-   - var results = Dog;
+  - var results = Dog;
   div(class="container-fluid")
-    each item,index in results
+    each value,index in results
       div(class="row", onclick=`buy(${index})`)
         div(class="col-sm-2") #{value.dog_Name}
         div(class="col-sm-2") #{value.age}
